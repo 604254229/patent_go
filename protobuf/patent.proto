@@ -1,0 +1,24 @@
+
+
+syntax = "proto3";
+
+option go_package = "github.com/604254229/patent_go/protobuf";
+option java_multiple_files = true;
+option java_package = "lifecall.patent";
+option java_outer_classname = "PatentProto";
+
+package patentpb;
+
+
+service PatentSvr {
+
+  rpc GetPatentResult (GetPatentResultRequest) returns (GetPatentResultReply) {}
+}
+
+message GetPatentResultRequest {
+  string name = 1;
+}
+
+message GetPatentResultReply {
+  string message = 1;
+}
