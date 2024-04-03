@@ -2,13 +2,15 @@
 
  1. 
     ```console
-      protoc --go_out=. --go_opt=paths=source_relative \
+    protoc --go_out=. --go_opt=paths=source_relative \
     --go-grpc_out=. --go-grpc_opt=paths=source_relative \
     protobuf/patent.proto
     ```
  1. Run the server:
 
     ```console
+    go get github.com/604254229/patent_go/protobuf
+    
     go run patent_server/main.go
     ```
 

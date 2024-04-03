@@ -1,4 +1,4 @@
-module patent
+module github.com/604254229/patent_go
 
 go 1.22.1
 
